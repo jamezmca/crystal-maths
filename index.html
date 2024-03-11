@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Math</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .bgGrid {
+      background-size: 40px 40px;
+      background-image: linear-gradient(to right, #eef2ff 1px, transparent 1px), linear-gradient(to bottom, #eef2ff 1px, transparent 1px);
+    }
+
+    * {
+      font-family: 'JetBrains Mono', sans-serif;
+      color: #3929ff;
+      font-weight: 300;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Press Start 2P", system-ui;
+    }
+
+    .blueShadow {
+      box-shadow: 0px 14px 55px rgba(106, 96, 255, 0.35);
+    }
+
+    .lightShadow {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lightShadow p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .lightShadow::after {
+      position: absolute;
+      content: '';
+      background: navy;
+      opacity: 0.04;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 100%;
+      transition-duration: 200ms;
+      z-index: 0;
+    }
+
+    .lightShadow:hover::after {
+      transform: translateX(100%);
+    }
+  </style>
+</head>
+
+<body class="relative text-sm sm:text-base">
+  <div class="absolute inset-0 bgGrid z-[-1] opacity-50"></div>
+  <header
+    class="sticky top-0 max-w-[1000px] mx-auto w-full p-4 sm:p-8 gap-4 sm:gap-8 flex items-center justify-between gap-4">
+    <h1 class="">Crystal Math</h1>
+    <button class=" px-6 lightShadow py-3  cursor-pointer   rounded-full bg-white blueShadow font-medium ">
+      <p>Book now</p>
+    </button>
+  </header>
+  <main id="app" class="min-h-screen flex flex-col">
+    <section class="flex flex-col max-w-[1000px] w-full mx-auto p-8 gap-8 md:gap-14 py-10 sm:py-14 md:py-20">
+      <h2 class="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl  text-center">Pure Math Made Crystal Clear</h2>
+      <p class="mx-auto max-w-[800px] w-full text-center text-base sm:text-lg md:text-xl">Experience the euphoric high
+        of greater knowledge, deeper understanding and some wild math 🔥 </p>
+      <div class="grid grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 sm:w-fit sm:mx-auto py-4">
+        <button
+          class=" px-6 lightShadow py-3 sm:px-10 sm:py-4  cursor-pointer   rounded-full bg-white blueShadow font-medium ">
+          <p class=" text-base sm:text-lg md:text-xl">Book now</p>
+        </button>
+        <button
+          class=" px-6 lightShadow py-3 sm:px-10 sm:py-4 bg-[#3929ff] cursor-pointer  rounded-full bg-white blueShadow font-medium ">
+          <p class="text-white text-base sm:text-lg md:text-xl">Get in touch</p>
+        </button>
+      </div>
+      <div class="flex items-center gap-4 mx-auto text-base sm:text-lg">
+        <p>4.6</p>
+        <div class="flex items-center gap-0.5">
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <i class="fa-solid fa-star text-amber-400"></i>
+          <div class="grid place-items-center relative">
+            <div class="flex justify-end w-[40%] absolute top-1/2 -translate-y-1/2 right-0 overflow-hidden">
+              <i class="fa-solid fa-star text-white"></i>
+            </div>
+            <i class="fa-solid fa-star text-amber-400"></i>
+          </div>
+        </div>
+        <p>(250+)</p>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
