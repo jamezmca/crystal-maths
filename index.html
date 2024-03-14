@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crystal Math</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -64,7 +65,7 @@
   </style>
 </head>
 
-<body class="relative text-sm sm:text-base text-[#3929ff]">
+<body class="relative text-sm sm:text-base text-[#3929ff] min-h-screen flex flex-col">
   <div class="absolute inset-0 bgGrid z-[-1] opacity-50"></div>
   <header
     class="sticky top-0 max-w-[1000px] mx-auto w-full p-4 sm:p-8 gap-4 sm:gap-8 flex items-center justify-between gap-4">
@@ -73,7 +74,7 @@
       <p>Book now</p>
     </button>
   </header>
-  <main id="app" class="min-h-screen flex flex-col">
+  <main id="app" class=" flex flex-col flex-1">
     <section class="flex flex-col max-w-[1000px] w-full mx-auto p-8 gap-8 md:gap-14 py-10 sm:py-14 md:py-20">
       <h2 class="font-bold text-2xl sm:text-4xl md:text-5xl lg:text-6xl  text-center">Pure Math Made Crystal Clear</h2>
       <p class="mx-auto max-w-[800px] w-full text-center text-base sm:text-lg md:text-xl">Experience the euphoric high
@@ -107,10 +108,9 @@
 
     </section>
   </main>
-  <footer>
-
+  <footer class="flex items-center justify-center py-10">
+    <p>Made with 💛</p>
   </footer>
-  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
